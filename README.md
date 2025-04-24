@@ -14,18 +14,11 @@ Screen Spy is a Python-based screen recording utility that captures your screen 
 
 ## Requirements
 - Python 3.6+
-- Required Python packages:
-  - opencv-python (cv2)
-  - numpy
-  - mss (screen capture)
-  - ctypes (for Windows API interaction)
+- `ffmpeg` executable in the same directory as the script
 
 ## Installation
 1. Clone this repository or download the script
-2. Install required packages:
-```bash
-pip install opencv-python numpy mss
-```
+2. Download the `ffmpeg` executable and place it in the same directory as the script
 
 ## Usage
 1. Run the script:
@@ -44,15 +37,15 @@ python screen-spy.py
 
 ## Configuration
 You can modify these variables in the script to adjust behavior:
-- `frame_rate = 20` - Frames per second for recording
 - `segment_time = 10 * 60` - Time in seconds before creating a new segment (default: 10 minutes)
-- `max_recording_time = 2 * 60 * 60` - Maximum recording time before starting a new session (default: 2 hours)
 - `threshold_gb = 5` - Minimum required free disk space in GB
+- `-framerate 10` - Frame rate for recording (default: 10 FPS)
+- `-video_size 1024x576` - Video resolution (default: 1024x576)
 
 ## Output
 - Video files are saved in MP4 format
 - Naming convention: `screen_record_YYYYMMDD_HHMMSS.mp4`
-- Videos are recorded at the native screen resolution
+- Videos are recorded at 1024x576 resolution
 - Files are automatically segmented every 10 minutes
 
 ## Error Handling
@@ -67,4 +60,4 @@ This tool captures all screen content, including sensitive information. Use resp
 ## Limitations
 - Currently optimized for Windows systems
 - Requires sufficient disk space for continuous recording
-- Video files are saved in MP4 format using the mp4v codec
+- Requires `ffmpeg` executable for screen recording
