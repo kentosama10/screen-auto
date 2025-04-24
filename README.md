@@ -7,7 +7,6 @@ Screen Spy is a Python-based screen recording utility that captures your screen 
 - **Silent Operation**: Runs in the background with no visible console window
 - **Continuous Recording**: Captures screen content even when the system is locked
 - **Automatic Segmentation**: Creates new video segments every 10 minutes
-- **Session Management**: Starts new recording sessions every 2 hours
 - **Disk Space Management**: Monitors available disk space and automatically removes older recordings when space is low
 - **Error Recovery**: Automatically restarts in case of unexpected errors
 - **Graceful Shutdown**: Can be stopped by creating a 'stop.txt' file
