@@ -1,7 +1,7 @@
 # Screen Auto - Automated Screen Recording Tool
 
 ## Overview
-Screen Spy is a Python-based screen recording utility that captures your screen continuously while running in the background. It features automatic segmentation, disk space management, and error recovery capabilities.
+Screen Auto is a Python-based screen recording utility that captures your screen continuously while running in the background. It features automatic segmentation, disk space management, and error recovery capabilities.
 
 ## Features
 - **Silent Operation**: Runs in the background with no visible console window
